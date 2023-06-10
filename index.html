@@ -1,0 +1,198 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	
+<link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Josefin+sans">
+	
+	
+<title>Documento sin título</title>
+	
+	<style>
+		#fondo {
+			position: fixed;
+			z-index: -1;
+			left: 0px;
+			top: 0px;
+			width:100%;
+			min-width: 1200px;
+		}
+		
+		
+		
+		body{
+			background-color: #999;
+		}
+			
+		#cola {
+			position: absolute;
+			z-index: 1;
+			left: -350px;
+			top: 206px;
+		}
+		
+		#cel{
+			position: fixed;
+			z-index: 2;
+			left: 50px;
+			top: 65px;
+			transition: 2s;
+		}
+		
+		#cel:hover {
+			-webkit-transform: rotateY(360deg);
+		}
+		
+		#zorro{
+			position: absolute;
+			z-index: 3;
+			left: 45px;
+			top: 358px;
+			transition: 500ms;
+		}
+		
+		#zorro:hover{
+			-webkit-transform: scale(1.4);
+		}
+		
+		#funda{
+			position: absolute;
+			z-index: 5;
+			left: 50px;
+			top: 900px;
+			transition: 2s;
+		}
+	
+		#funda:hover {
+			-webkit-transform:scale(0.9);
+		}
+		
+		
+		.dispositivos {
+			width: 80%;
+			margin-left: 100px;
+		}
+		
+		.contenido{
+			margin-left: 400px;
+			margin-right: 60px;
+			margin-bottom: 200px;
+			font-family: 'Josefin Sans', sans-serif;
+			font-size: 18px;
+			color: #fff;
+		}
+		
+		#contenido2 {
+			top: 1000px;	
+		
+		}
+		
+		@media screen and (max-width:768px) {
+			#fondo{
+				display: none;
+			}
+		}
+		
+		
+		#menu {
+			position: fixed;
+			z-index: 5;
+			left:30px;
+			bottom: 40px;
+		}
+	
+		.btn-group .button {
+		  background-color: #AA9394 ;
+		  border: none;
+		  color: white;
+		  padding: 15px 32px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 16px;
+		  cursor: pointer;
+		  float: left;
+			
+		}
+
+		.btn-group .button:hover {
+		  background-color: #CD7778;
+			border-top-color:#CD7778;
+		}
+		
+		
+		.button:active{
+			background-color: #F8080C;
+			border-top-color:#F8080C;
+		}
+		
+		
+		.menu {
+			position: absolute;
+			left: 500px;
+		}
+		@media screen and(max-width:768px){
+			#fondo {
+				display: none;
+			}
+		}
+	</style>
+</head>
+<body>
+	
+	<video src="video/fondo.mp4" autoplay loop muted id="fondo"></video>
+	
+	<img src="img/cola.png" id="cola" alt="">
+	<img src="img/telefono.png" id="cel" alt="">
+	<img src="img/zorro.png" id="zorro" alt="">
+	<img src="img/funda.png" id="funda" alt="">
+	
+	
+	
+	<div class="contenido" id="contenido1">
+	
+		<h1>CONTENIDO</h1>
+		<p>
+			Al día de hoy, la tecnología web ha avanzado enormemente, los navegadores entienden 3 lenguajes: HTML para crear la estructura de las páginas web, CSS para dar presentación a los sitios y JavaScript para agregar interactividad. Las últimas versiones de estos lenguajes son HTML5, CSS3 y JS
+		</p>
+		<ul>
+			<li>HTML5</li>
+			<li>CSS3</li>
+			<li>JS</li>
+		</ul>
+		<p>https://developers.google.com/fonts/docs/getting_started?hl=es-419</p>
+		<p>https://developer.mozilla.org/en-US/docs/Web/CSS/transform</p>
+		<p>https://www.viki.com/categories/country/korea/genre/all</p>
+		<p>https://www.youtube.com/watch?v=BrDJRQe77qc</p>
+		<p>https://www.youtube.com/watch?v=l0Xtt9WpHVY</p>
+		<br>
+		<img src="img/dispositivos.png" class="dispositivos" alt="">
+	</div>
+	
+	<div class="contenido" id="contenido2">
+	
+		<h1>CONTENIDO</h1>
+		<p>
+			Al día de hoy, la tecnología web ha avanzado enormemente, los navegadores entienden 3 lenguajes: HTML para crear la estructura de las páginas web, CSS para dar presentación a los sitios y JavaScript para agregar interactividad. Las últimas versiones de estos lenguajes son HTML5, CSS3 y JS.
+		</p>
+		<ul>
+			<li>HTML5</li>
+			<li>CSS3</li>
+			<li>JS</li>
+		</ul>
+		<img src="img/open.png" class="dispositivos" alt="">
+	</div>
+	
+	
+	<div id="menu" class="btn-group">
+		<a href="#" class="button" onClick="document.getElementById('fondo').play()" >Play</a>
+		<a href="#" class="button" onClick="document.getElementById('fondo').pause()">Pause</a>
+		<a href="#" class="button" onClick="document.getElementById('fondo').currentTime=30">Guitarra</a>
+		<a href="#" class="button" onClick="document.getElementById('fondo').currentTime=17">Salto</a>
+	
+	</div>
+	
+	
+</body>
+</html>
